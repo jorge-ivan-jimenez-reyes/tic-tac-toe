@@ -1,4 +1,3 @@
-
 import Foundation
 import SwiftUI
 
@@ -9,33 +8,28 @@ struct Cell
     func displayTile() -> String
     {
         switch(tile)
-        { 
-        case Tile.Nought:
-            return "O"
-        
-        case Tile.Cross:
-            return "X"
-        default:
-            return ""
+        {
+            case Tile.Nought:
+                    return "O"
+            case Tile.Cross:
+                return "X"
+            default:
+                return ""
         }
-        
     }
     
-    func tilecolor() -> Color
+    func tileColor() -> Color
     {
         switch(tile)
         {
-        case Tile.Nought:
-            return Color.red
-        
-        case Tile.Cross:
-            return Color.black
-        default:
-            return Color.black
+            case Tile.Nought:
+                return Color.red
+            case Tile.Cross:
+                return Color.black
+            default:
+                return Color.black
         }
-        
     }
-    
 }
 
 enum Tile
